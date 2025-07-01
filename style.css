@@ -1,0 +1,34 @@
+/* Box‐sizing reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic body setup */
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.5;
+  background-color: #ffffff;
+  color: #1e1c41;
+}
+
+/* Utility classes */
+.hidden {
+  display: none !important;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+}
+
+/* Example override:
+   .theme.light .btn { background: #38b6ff; color: #fff; } */
